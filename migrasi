@@ -5,7 +5,7 @@ IFS=$'\n\t'
 mkdir -p /NemBackup
 cat <<EOF > /root/start
 mv /root/NemBackup /
-echo "Langs ENTER AJA"
+echo "Langsung ENTER AJA"
 mysql -u root -p < /NemBackup/database.sql
 tar -xvpzf /NemBackup/panel.tar.gz -C /
 tar -xvpzf /NemBackup/paymenter.tar.gz -C /
