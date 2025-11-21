@@ -19,7 +19,7 @@ echo "LANGSUNG ENTER AJA INI"
 mysqldump -u root -p --all-databases > /NemBackup/database.sql
 tar -cvpzf /NemBackup/panel.tar.gz /etc/letsencrypt /var/www/pterodactyl /etc/nginx/sites-available/pterodactyl.conf /NemBackup/database.sql
 tar -cvpzf /NemBackup/paymenter.tar.gz /etc/letsencrypt /var/www/paymenter /etc/nginx/sites-available/paymenter.conf /NemBackup/database.sql
-tar -cvzf /NemBackup/node.tar.gz /var/lib/pterodactyl /etc/pterodactyl /etc/letsencrypt
+tar -cvzf /NemBackup/node.tar.gz /var/lib/pterodactyl /etc/pterodactyl /etc/letsencrypt /root/.ssh
 
 
 clear
