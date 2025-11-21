@@ -25,4 +25,4 @@ tar -cvzf /NemBackup/node.tar.gz /var/lib/pterodactyl /etc/pterodactyl /etc/lets
 clear
 read -p "masukkan IP VPS tujuan: " target
 ssh-keygen -R "$target" 2>/dev/null || true
-scp -rp {/NemBackup,/root/start} root@$target:/root
+scp -rp {/NemBackup} root@$target:/root
